@@ -24,6 +24,7 @@ from htmlTemplates import css, bot_template, user_template
     #max_retries=2,
     # other params...
     #)
+openai_api_key = ""
 
 def get_pdf_text(pdf_docs):
     text = ""
@@ -84,11 +85,11 @@ def handle_userinput(user_question):
 
 def main():
     #load_dotenv()
-    openai_api_key = st.text_input("OpenAI API Key", type="password") 
     
     st.set_page_config(page_title="Chat with multiple PDFs",
                        page_icon=":books:")
     st.write(css, unsafe_allow_html=True)
+    openai_api_key = st.text_input("OpenAI API Key", type="password") 
 
     if "conversation" not in st.session_state:
         st.session_state.conversation = None
