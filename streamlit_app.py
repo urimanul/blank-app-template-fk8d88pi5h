@@ -86,7 +86,8 @@ def handle_userinput(user_question):
 
 
 def main():
-    load_dotenv()
+    #load_dotenv()
+    openai_api_key = st.text_input("OpenAI API Key", type="password")
     st.set_page_config(page_title="Chat with multiple PDFs",
                        page_icon=":books:")
     st.write(css, unsafe_allow_html=True)
