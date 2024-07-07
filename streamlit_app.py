@@ -122,5 +122,5 @@ def main():
                     vectorstore)
 
 
-if __name__ == '__main__':
-    main()
+#if __name__ == '__main__':
+    #main()
