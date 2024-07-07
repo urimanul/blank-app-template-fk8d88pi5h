@@ -89,7 +89,7 @@ def main():
     st.set_page_config(page_title="Chat with multiple PDFs",
                        page_icon=":books:")
     st.write(css, unsafe_allow_html=True)
-    openai_api_key = st.text_input("OpenAI API Key", type="password") 
+    #openai_api_key = st.text_input("OpenAI API Key", type="password") 
 
     if "conversation" not in st.session_state:
         st.session_state.conversation = None
